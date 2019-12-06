@@ -220,8 +220,7 @@ $(document).ready(function() {
           $("." + shooter).hide();
           deadGuy.shootPlayer(game);
           console.log(game.playerOrder);
-          $("#fascistPoliciesTotal").text(game.fascistPolicies)
-          $("#liberalPoliciesTotal").text(game.liberalPolicies)
+          updatePoliciesTotal();
 
 
         }
@@ -423,8 +422,7 @@ $(document).ready(function() {
       if (game.executiveActionsTaken === 1) {
         $(".nextRound").show();
         //THIS IS WHERE WE SHOW THE CARD ON THE BOARD///
-        $("#fascistPoliciesTotal").text(game.fascistPolicies)
-        $("#liberalPoliciesTotal").text(game.liberalPolicies)
+        updatePoliciesTotal();
       }else {
         $(".voteButton").hide();
         $(".nextRound").hide();
@@ -435,8 +433,7 @@ $(document).ready(function() {
       if (game.executiveActionsTaken === 2) {
         $(".nextRound").show();
         //THIS IS WHERE WE SHOW THE CARD ON THE BOARD///
-        $("#fascistPoliciesTotal").text(game.fascistPolicies)
-        $("#liberalPoliciesTotal").text(game.liberalPolicies)
+        updatePoliciesTotal();
 
       }else {
         $("button.nameButton").addClass("shoot");
@@ -451,8 +448,7 @@ $(document).ready(function() {
       if (game.executiveActionsTaken === 3) {
         $(".nextRound").show();
         //THIS IS WHERE WE SHOW THE CARD ON THE BOARD///
-        $("#fascistPoliciesTotal").text(game.fascistPolicies)
-        $("#liberalPoliciesTotal").text(game.liberalPolicies)
+        updatePoliciesTotal();
 
       }else {
         console.log('should meet 5 eah');
@@ -464,8 +460,7 @@ $(document).ready(function() {
         shootSecondPlayer();
       }
     }
-    $("#fascistPoliciesTotal").text(game.fascistPolicies)
-    $("#liberalPoliciesTotal").text(game.liberalPolicies)
+    updatePoliciesTotal();
     playerTextUpdate();
 
     winCheck();
@@ -551,6 +546,7 @@ $(document).ready(function() {
     $(".topThreeCheck").hide();
     $('.killFirstPlayer').show();
     $('.killSecondPlayer').hide();
+    game.executiveActionsTaken ++;
     //DOESNT WORK AFFECTS OTHER PARTS OF THE GAME
   }
   function shootSecondPlayer(){
@@ -564,8 +560,12 @@ $(document).ready(function() {
     $(".topThreeCheck").hide();
     $('.killFirstPlayer').hide();
     $('.killSecondPlayer').show();
+    game.executiveActionsTaken ++;
   }
-
+function updatePoliciesTotal (){
+  $("#fascistPoliciesTotal").text(game.fascistPolicies)
+  $("#liberalPoliciesTotal").text(game.liberalPolicies)
+}
 
 
 
