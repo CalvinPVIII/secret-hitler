@@ -340,10 +340,23 @@ $(document).ready(function() {
     $(".presidentPolicyElimination").show();
     game.shuffleDeck();
     game.drawThreeCards();
+    console.log(game.drawnCardsArray);
     console.log(game.drawnCardsArray[0]);
-    $("#presidentPolicy1").text(game.drawnCardsArray[0]);
-    $("#presidentPolicy2").text(game.drawnCardsArray[1]);
-    $("#presidentPolicy3").text(game.drawnCardsArray[2]);
+    if (game.drawnCardsArray[0].includes('f')) {
+      $("#presidentPolicy1").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2059%20PM.jpg')
+    }else if (game.drawnCardsArray[0].includes('l')) {
+      $("#presidentPolicy1").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2024%20PM.jpg')
+    }
+    if (game.drawnCardsArray[1].includes('f')) {
+      $("#presidentPolicy2").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2059%20PM.jpg')
+    }else if (game.drawnCardsArray[1].includes('l')) {
+      $("#presidentPolicy2").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2024%20PM.jpg')
+    }
+    if (game.drawnCardsArray[2].includes('f')) {
+      $("#presidentPolicy3").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2059%20PM.jpg')
+    }else if (game.drawnCardsArray[2].includes('l')) {
+      $("#presidentPolicy3").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2024%20PM.jpg')
+    }
     $("form.presidentPolicyForm input").prop("checked", false);
     $("form.chancellorPolicyForm input").prop("checked", false);
   });
@@ -399,8 +412,17 @@ $(document).ready(function() {
   }
 
   $("#chancellorVerifyButton").click(function() {
-    $("#chancellorPolicy1").text(game.drawnCardsArray[0]);
-    $("#chancellorPolicy2").text(game.drawnCardsArray[1]);
+    console.log(game.drawnCardsArray);
+    if (game.drawnCardsArray[0].includes('f')) {
+      $("#chancellorPolicy1").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2059%20PM.jpg')
+    }else if (game.drawnCardsArray[0].includes('l')) {
+      $("#chancellorPolicy1").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2024%20PM.jpg')
+    }
+    if (game.drawnCardsArray[1].includes('f')) {
+      $("#chancellorPolicy2").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2059%20PM.jpg')
+    }else if (game.drawnCardsArray[1].includes('l')) {
+      $("#chancellorPolicy2").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2024%20PM.jpg')
+    }
     $(".chancellorPolicyCheck").hide();
     $(".chancellorPolicyElimination").show();
   });
@@ -509,9 +531,21 @@ $(document).ready(function() {
     }
   }
   $("button#executivePolicyCheck").click(function(){
-    $("#policy1").text(game.drawnCardsArray[0])
-    $("#policy2").text(game.drawnCardsArray[1])
-    $("#policy3").text(game.drawnCardsArray[2])
+    if (game.drawnCardsArray[0].includes('f')) {
+      $("#policy1").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2059%20PM.jpg')
+    }else if (game.drawnCardsArray[0].includes('l')) {
+      $("#policy1").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2024%20PM.jpg')
+    }
+    if (game.drawnCardsArray[1].includes('f')) {
+      $("#policy2").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2059%20PM.jpg')
+    }else if (game.drawnCardsArray[1].includes('l')) {
+      $("#policy2").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2024%20PM.jpg')
+    }
+    if (game.drawnCardsArray[2].includes('f')) {
+      $("#policy3").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2059%20PM.jpg')
+    }else if (game.drawnCardsArray[2].includes('l')) {
+      $("#policy3").attr('src','https://raw.githubusercontent.com/Saul-Ordonez/secret-hitler/master/media/Photo%20Dec%2004%2C%2012%2016%2024%20PM.jpg')
+    }
     $("#closeTopThree").show();
   })
   $("button#closeTopThree").click(function(){

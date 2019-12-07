@@ -388,3 +388,9 @@ label.neinLabel {
 .chaos {
   display: none;
 }
+
+
+#presidentPolicy1, #presidentPolicy2, #presidentPolicy3, #chancellorPolicy1, #chancellorPolicy2, #chancellorPolicy3, #policy1, #policy2, #policy3 {
+  width: 60px;
+  height: 100px;
+}
