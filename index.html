@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret Hitler</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+    </div>
+    <!-- <button type="button" id='cheatButton'>Skip</button> -->
+    <div class="gameGrid">
+
+      <div class="playerNum bulletinBoard">
+        <h2>Please select number of players</h2>
+        <button type="button" id="5players">5</button>
+        <button type="button" id="6players">6</button>
+      </div>
+
+      <div class="nameInput5 bulletinBoard">
+        <form class="form5">
+          <label for="">Player 1 name</label>
+          <input type="text" name="playerName" id="player1">
+          <label for="">Player 2 name</label>
+          <input type="text" name="playerName" id="player2">
+          <label for="">Player 3 name</label>
+          <input type="text" name="playerName" id="player3">
+          <label for="">Player 4 name</label>
+          <input type="text" name="playerName" id="player4">
+          <label for="">Player 5 name</label>
+          <input type="text" name="playerName" id="player5">
+          <button type="submit" class="nameSubmit5">Submit</button>
+        </form>
+      </div>
+
+      <div class="nameInput6 bulletinBoard">
+        <form class="form6">
+          <label for="">Player 1 name</label>
+          <input type="text" name="playerName" id="player1b">
+          <label for="">Player 2 name</label>
+          <input type="text" name="playerName" id="player2b">
+          <label for="">Player 3 name</label>
+          <input type="text" name="playerName" id="player3b">
+          <label for="">Player 4 name</label>
+          <input type="text" name="playerName" id="player4b">
+          <label for="">Player 5 name</label>
+          <input type="text" name="playerName" id="player5b">
+          <label for="">Player 6 name</label>
+          <input type="text" name="playerName" id="player6b">
+          <button type="submit" class="nameSubmit6">Submit</button>
+        </form>
+      </div>
+
+      <div class="player1">
+        <button class="nameButton" disabled><span id="player1Name"></span></button>
+        <button type="button" id='player1Btn' name="affiliation">Affiliation</button>
+        <h4><span id='titlePlaceholder1'></span></h4>
+        <p id='player1Affiliation'></p>
+        <div class="vote">
+          <form class="voteForm">
+            <div class="form-group">
+              <label class="jaLabel">
+                <input class="voteRadio" type="radio" name="voteResponse1" value="1" disabled>
+              </label>
+              <label class="neinLabel">
+                <input class="voteRadio" type="radio" name="voteResponse1" value="0" disabled>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="player2">
+          <button class="nameButton" disabled><span id="player2Name"></span></button>
+          <button type="button" id='player2Btn' name="affiliation">Affiliation</button>
+          <h4><span id='titlePlaceholder2'></span></h4>
+          <p id='player2Affiliation'></p>
+          <div class="form-group">
+            <label class="jaLabel">
+              <input class="voteRadio" type="radio" name="voteResponse2" value="1" disabled>
+            </label>
+            <label class="neinLabel">
+              <input class="voteRadio" type="radio" name="voteResponse2" value="0" disabled>
+            </label>
+          </div>
+        </div>
+
+        <div class="player3">
+          <button class="nameButton" disabled><span id="player3Name"></span></button>
+          <button type="button" id='player3Btn' name="affiliation">Affiliation</button>
+          <h4><span id='titlePlaceholder3'></span></h4>
+          <p id='player3Affiliation'></p>
+          <div class="form-group">
+            <label class="jaLabel">
+              <input class="voteRadio" type="radio" name="voteResponse3" value="1" disabled>
+            </label>
+            <label class="neinLabel">
+              <input class="voteRadio" type="radio" name="voteResponse3" value="0" disabled>
+            </label>
+          </div>
+        </div>
+
+        <div class="player4">
+          <button class="nameButton" disabled><span id="player4Name"></span></button>
+          <button type="button" id='player4Btn' name="affiliation">Affiliation</button>
+          <h4><span id='titlePlaceholder4'></span></h4>
+          <p id='player4Affiliation'></p>
+          <div class="form-group">
+            <label class="jaLabel">
+              <input class="voteRadio" type="radio" name="voteResponse4" value="1" disabled>
+            </label>
+            <label class="neinLabel">
+              <input class="voteRadio" type="radio" name="voteResponse4" value="0" disabled>
+            </label>
+            </div>
+        </div>
+
+        <div class="player5">
+          <button class="nameButton" disabled><span id="player5Name"></span></button>
+          <button type="button" id='player5Btn' name="affiliation">Affiliation</button>
+          <h4><span id='titlePlaceholder5'></span></h4>
+          <p id='player5Affiliation'></p>
+          <div class="form-group">
+            <label class="jaLabel">
+              <input class="voteRadio" type="radio" name="voteResponse5" value="1" disabled>
+            </label>
+            <label class="neinLabel">
+              <input class="voteRadio" type="radio" name="voteResponse5" value="0" disabled>
+            </label>
+          </div>
+        </div>
+
+        <div class="player6">
+          <button class="nameButton" disabled><span id="player6Name"></span></button>
+          <button type="button" id='player6Btn' name="affiliation">Affiliation</button>
+          <h4><span id='titlePlaceholder6'></span></h4>
+          <p id='player6Affiliation'></p>
+          <div class="form-group">
+            <label class="jaLabel">
+              <input class="voteRadio" type="radio" name="voteResponse6" value="1" disabled>
+            </label>
+            <label class="neinLabel">
+              <input class="voteRadio" type="radio" name="voteResponse6" value="0" disabled>
+            </label>
+          </div>
+        </div>
+
+        <div class="liberalBoard">
+          <div class="blackLibBoarder">
+          </div>
+
+          <div class="blackLibSideL">
+          </div>
+
+          <div class="blackLibSideR">
+          </div>
+
+          <div class="blackLibBottom">
+          </div>
+
+          <div class="blueBoarder">
+          </div>
+
+          <div class="blueSideL">
+          </div>
+
+          <div class="blueSideR">
+          </div>
+
+          <div class="electionTracker">
+          </div>
+
+          <div class="firstLib">
+          </div>
+
+          <div class="secondLib">
+          </div>
+
+          <div class="thirdLib">
+          </div>
+
+          <div class="fourthLib">
+          </div>
+
+          <div class="fifthLib">
+          </div>
+        </div>
+
+        <div class="voteButton bulletinBoard">
+          <h4>A president and chancellor have been nominated, all players please vote now.</h4>
+          <button type="button" id="voteTally">Tally Votes</button>
+        </div>
+      </form>
+      <br>
+
+      <div class="fascistBoard">
+
+        <div class="blackFasBoarder">
+        </div>
+
+        <div class="blackFasSideL">
+        </div>
+
+        <div class="blackFasSideR">
+        </div>
+
+        <div class="blackFasBottom">
+        </div>
+
+        <div class="redBoarder">
+        </div>
+
+        <div class="redSideL">
+        </div>
+
+        <div class="redSideR">
+        </div>
+
+        <div class="redBoarderB">
+        </div>
+
+        <div class="firstFas">
+        </div>
+
+        <div class="secondFas">
+        </div>
+
+        <div class="thirdFas">
+        </div>
+
+        <div class="fourthFas">
+        </div>
+
+        <div class="fifthFas">
+        </div>
+
+        <div class="sixthFas">
+        </div>
+      </div>
+
+      <div class="affiliationCheck bulletinBoard">
+        <h4>Players should now check to see which party affiliation they are in. Make sure to not show anyone else!</h4>
+        <button type="button" id="audioPlay">Ready to Continue?</button>
+      </div>
+
+      <div class="audio bulletinBoard">
+        <p>All players gather around and close your eyes.  Fascists open your eyes and acknowledge each other then close them again.  After 5 more seconds, everyone open them again and resume play.</p>
+        <button type="button" id="audioDone" name="button">Continue</button>
+      </div>
+
+      <div class="selectChancellor bulletinBoard">
+        <h4>President, please elect a chancellor as your running mate by clicking on one of the other players names.</h4>
+      </div>
+
+      <div class="presidentPolicyCheck bulletinBoard">
+        <h3>Congratulations on a successful election, you have had <span id="electionTrack">0</span> failed elections in a row.</h3>
+        <h4>Everyone look away from the screen except the President. President are you now alone?</h4>
+        <button type="button" id="presidentVerifyButton">Yes I'm alone</button>
+      </div>
+
+      <div class="presidentPolicyElimination bulletinBoard">
+        <h4>President, please select 1 policy to discard</h4>
+        <form class="presidentPolicyForm">
+          <input type="radio" name="policyEliminator" value=""><img src= "" id="presidentPolicy1"></img>
+          <input type="radio" name="policyEliminator" value=""><img src= "" id="presidentPolicy2"></img>
+          <input type="radio" name="policyEliminator" value=""><img src= "" id="presidentPolicy3"></img>
+        </form>
+      </div>
+
+      <div class="chancellorPolicyCheck bulletinBoard">
+        <h4>Everyone look away from the screen except the Chancellor. Chancellor are you now alone?</h4>
+        <button type="button" id="chancellorVerifyButton">Yes I'm alone</button>
+      </div>
+
+      <div class="chancellorPolicyElimination bulletinBoard">
+        <h4>Chancellor, please select 1 policy to discard</h4>
+        <form class="chancellorPolicyForm">
+          <input type="radio" name="policyEliminator" value=""><img src='' id="chancellorPolicy1"></img>
+          <input type="radio" name="policyEliminator" value=""><img src='' id="chancellorPolicy2"></img>
+        </form>
+      </div>
+
+      <div class="nextRound bulletinBoard">
+        <h4>Congrats on making it through a legislative session, the next round is about to begin with a new president and chancellor.</h4>
+        <button type="button" id="nextRound">Begin Next Round</button>
+        <h5>Your current legislative policy total is <span id="fascistPoliciesTotal">0</span> Fascists Policies and <span id="liberalPoliciesTotal">0</span> Liberal Policies.</h5>
+      </div>
+
+      <div class="newRound bulletinBoard">
+        <h4>The vote has failed. A new President will now be assigned and a new chancellor will be up for election. You have failed to elect anyone <span id='electionsFailed'> times in a row.</span></h4>
+        <button type="button" id='newRound' name="button">Begin Next Round</button>
+        <div class="chaos bulletinBoard">
+          <h4>Due to the inability to elect anyone three times in a row the top policy card has been played.</h4>
+        </div>
+      </div>
+
+
+      <div class="executiveAction bulletinBoard">
+        <div class="topThreeCheck">
+          <h4>Three fascist policies have been enacted, President you <strong>must</strong> look at the top three policy cards.</h4>
+          <h4>Everyone look away from the screen except the President. President are you now alone?</h4>
+          <button type="button" id="executivePolicyCheck">Yes I'm alone</button>
+          <div class="showPolicy">
+            <img src= '' id="policy1"></img>
+            <img src= '' id="policy2"></img>
+            <img src= '' id="policy3"></img>
+            <button type="button" id='closeTopThree'>Continue</button>
+          </div>
+        </div>
+        <div class="killFirstPlayer">
+          <h4>Three fascist policies have been enacted, President you <strong>must</strong> select a player to kill by clicking on one of the other players names.</h4>
+        </div>
+        <div class="killSecondPlayer">
+          <h4>Three fascist policies have been enacted, President you <strong>must</strong> select a player to kill by clicking on one of the other players names.</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="gameEnd">
+      <div class="liberalBoardWin bulletinBoard">
+        <h1>Congratulations Liberals! You have won the game and stopped fascism!</h1>
+      </div>
+      <div class="liberalKillWin bulletinBoard">
+        <h1>Congratulations Liberals! You have won the game and stopped fascism by killing Hitler, well done!</h1>
+      </div>
+      <div class="fascistBoardWin bulletinBoard">
+        <h1>Congratulations Fascists! You have won the game and stopped democracy!</h1>
+      </div>
+      <div class="fascistHitlerWin bulletinBoard">
+        <h1>Congratulations Fascists! You have won the game and stopped democracy by getting liberals to elect Hitler, well done!</h1>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
